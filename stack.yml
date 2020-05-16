@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  preferenceDb:
+    environment: 
+      POSTGRES_DATABASE: preferenceDb
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+    image: "postgres:alpine"
+    restart: always
+    volumes: 
+      - "./10-formationEnum.sql:/docker-entrypoint-initdb.d/10-formationEnum.sql"
+      - "./20-userTable.sql:/docker-entrypoint-initdb.d/20-userTable.sql"
+      - "./30-formationTable.sql:/docker-entrypoint-initdb.d/30-formationTable.sql"
