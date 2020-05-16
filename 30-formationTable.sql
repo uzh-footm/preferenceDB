@@ -4,6 +4,7 @@ CREATE TABLE teams_formation (
    last_Edited timestamp,
    formation formation,
    owner integer,
+   GK integer,
    LS integer, 
    ST integer, 
    RS integer, 
