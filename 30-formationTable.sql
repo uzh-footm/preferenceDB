@@ -1,7 +1,6 @@
 CREATE TABLE teams_formation (
    id SERIAL,
    name varchar(255),
-   last_Edited timestamp,
    formation formation,
    owner integer,
    GK integer,

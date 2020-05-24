@@ -1,10 +1,9 @@
 version: '3.1'
 
 services:
-
-  preferenceDb:
+  preferencedb:
     environment: 
-      POSTGRES_DATABASE: preferenceDb
+      POSTGRES_DATABASE: preferencedb
       POSTGRES_PASSWORD: password
       POSTGRES_USER: postgres
     image: "postgres:alpine"
